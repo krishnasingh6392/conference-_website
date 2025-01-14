@@ -17,162 +17,133 @@
     />
   </head>
 
-  <body class="bg-rose-100 text-gray-900 test-red font-sans overflow-x-hidden">
-    <nav
-      class="bg-gradient-to-r from-cyan-400 to-pink-300 w-full z-10 shadow-lg px-4"
+  <body class="bg-slate-50 text-gray-900 test-red font-sans overflow-x-hidden">
+    <div
+      class="navbar-start flex flex-row md:flex-row justify-between items-center px-12  py-2  gap-4 md:px-8 md:py-4 bg-blue-200"
     >
-      <div class="container mx-auto p-2 flex items-center justify-between">
-        <div class="flex items-center gap-4">
-          <a href="http://www.mmmut.ac.in/" target="_parent"
-            ><img
-              src="./images/mmmut_logo.png "
-              alt=""
-              class="h-8 md:h-16 rounded-full"
-          /></a>
-          <a href="index.html" class="text-xl md:text-3xl font-bold text-white"
+      <div class=" flex justify-around items-center ">
+        <a href="https://www.mmmut.ac.in/">
+          <img
+            src="./images/mmmut_logo.png "
+            class="w-12 h-12 rounded-full"
+            alt="error"
+        /></a>
+        <div class="dropdown">
+          <a
+            class="btn btn-ghost text-sm hidden md:block md:text-3xl text-blue-900 font-semibold"
             >ICETITSC-2025</a
           >
         </div>
+      </div>
 
-        <ul class="hidden text-sm lg:flex space-x-6 text-slate-650 md:text-sm font items-center" id="nav_bar">
-          <li
-            class="hover: border-b-2 border-transparent hover:border-pink-500"
-          >
-            <a href="index.html" class="hover:text-black transition"
-              ><i class="ri-home-4-line md:text-2xl"></i
-            ></a>
+      <div class="navbar-center hidden flex-col  lg:flex" id="nav_bar">
+        <ul
+          class="menu menu-horizontal flex flex-col gap-4 md:flex-row md:gap-8 text-lg text-blue-800"
+        >
+          <li class="hover:text-slate-800">
+            <a href="./index.html"> <i class="ri-home-4-line text-xl"></i></a>
           </li>
-          <li
-            class="hover: border-b-2 border-transparent hover:border-pink-500"
-          >
-            <a
-              href="#about_Conference"
-              id="about_conference_link"
-              class="hover:text-black transition"
-              >About Conference</a
-            >
+          <li class="hover:text-slate-800">
+            <a href="./src/conference.html">About Conference</a>
           </li>
-          <li
-            class="hover: border-b-2 border-transparent hover:border-pink-500"
-          >
-            <a href="#about_mmmut" class="hover:text-black transition"
-              >About MMMUT</a
-            >
+          <li class="hover:text-slate-800">
+            <a href="./src/about.html" target="_self">About MMMUT</a>
           </li>
-          <li
-            class="hover: border-b-2 border-transparent hover:border-pink-500"
-          >
-            <a
-              href="#technical_program_commitee"
-              class="hover:text-black transition"
-              >Organizers</a
-            >
+          <li class="hover:text-slate-800">
+            <details>
+              <summary>Committee</summary>
+              <ul class="p-2 text-sm font-normal">
+                <li class="hover:text-slate-400">
+                  <a href="./src/advisory.html">Advisory Commitee</a>
+                </li>
+                <li><a href="./src/technical.html">Technical committee</a></li>
+                <li><a href="./src/publicity.html">Publicity Committee</a></li>
+                <li>
+                  <a href="./src/organising.html">Organising committee</a>
+                </li>
+                <li>
+                  <a href="./src/invitation.html">Invitation Committee</a>
+                </li>
+                <li>
+                  <a href="./src/hospitality.html">hospitality Committee</a>
+                </li>
+                <li><a href="./src/transport.html">transport Committee</a></li>
+              </ul>
+            </details>
           </li>
-          <li
-            class="hover: border-b-2 border-transparent hover:border-pink-500"
-          >
-            <a href="#key_note_speaker" class="hover:text-black transition"
-              >Keynote Speakers</a
-            >
+          <li class="hover:text-slate-800">
+            <a href="./src/speaker.html">Speakers</a>
           </li>
-          <li
-            class="hover: border-b-2 border-transparent hover:border-pink-500"
-          >
-            <a href="#Tracks" class="hover:text-black transition">Tracks</a>
+          <li class="hover:text-slate-800">
+            <a href="./src/dates.html">Important Dates</a>
           </li>
-          <li
-            class="hover: border-b-2 border-transparent hover:border-pink-500"
-          >
-            <a href="#important_dates" class="hover:text-black transition"
-              >Important Dates</a
-            >
-          </li>
-          <li
-            class="hover: border-b-2 border-transparent hover:border-pink-500"
-          >
-            <a href="#registration_fee" class="hover:text-black transition"
-              >Registration</a
-            >
-          </li>
-          <button onclick="toggleDarkMode()">
-            <svg
-              class="swap-off h-8 w-10 fill-current text-slate-800"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"
-              />
-            </svg>
-          </button>
-          <li
-            class="hover: border-b-2 border-transparent hover:border-pink-500"
-          >
-            <a href="#contact" class="hover:text-black transition"
-              ><i class="ri-phone-fill text-2xl"></i>
-            </a>
+          <li class="hover:text-slate-800">
+            <a href="./src/registration.html">Registration</a>
           </li>
         </ul>
-        <div id="ham_burger" class="block md:hidden">
-          <i class="ri-menu-line text-2xl"></i>
-        </div>
       </div>
-    </nav>
+      <div id="ham_burger" class="display-block  ml-36 md:hidden text-blue-500">
+        <i class="ri-menu-line text-2xl"></i>
+      </div>
+      <div class="navbar-end">
+        <a
+          class="hidden md:block text-sm md:text-xl px-4 text-blue-800 hover:text-slate-800"
+          href="./src/contact.html"
+        >
+          Contact us <i class="ri-phone-fill text-blue-500"></i>
+        </a>
 
-    <div
-      class="adminstrative_block w-3/4 mx-auto m-8 overflow-hidden shadow-lg"
-    >
+        <div id=""></div>
+      </div>
+    </div>
+
+    <div class="adminstrative_block overflow-hidden shadow-lg m-4">
       <div id="home_page_img">
         <img
           id="slider_image"
           src="./images/old_adminstrative_block_img.jpg "
-          class="h-48 md:h-96 hover:cursor-pointer hover:scale-105 duration-300 ease-in-out rounded-lg shadow-xl"
+          class="h-48 md:h-100 max-w-full hover:cursor-pointer"
           alt="Administrative Block"
         />
       </div>
     </div>
+    <div class="bg-slate-100">
+      <div class="text-center text-slate-600 leading-tight">
+        <p class="text-lg md:text-xl text-blue-800 px-2">
+          International Conference on Emerging Trends in Information Technology
+          & Symbolic Computation
+        </p>
 
-    <div class="text-center text-slate-600 leading-tight">
-      <p class="text-3xl text-gray-800 px-2">
-        International Conference on Emerging Trends in Information Technology &
-        Symbolic Computation
-      </p>
-      <h1 class="text-2xl m-2 text-cyan-600">(ICETITSC-2025)</h1>
-      <h3 class="text-xl italic">Organised By</h3>
-      <p class="text-xl text-pink-600 mt-2">
-        Department of Information Technology & Computer Application and
-        Department of Mathematics & Scientific Computing
-      </p>
-      <p class="text-2xl text-cyan-600 mt-3">
-        Madan Mohan Malaviya University of Technology Gorakhpur, U.P., India
-      </p>
-    </div>
+        <h3 class="text-sm md:text-lg">Organised By</h3>
+        <p class="text-xs md:text-lg text-black">
+          Department of Information Technology & Computer Application and
+          Department of Mathematics & Scientific Computing
+        </p>
+        <p class="text-lg md:text-xl text-blue-500 mt-1 font-semibold">
+          Madan Mohan Malaviya University of Technology Gorakhpur, U.P., India
+        </p>
+      </div>
 
-    <div id="date_logo" class="flex justify-center mt-3">
-      <a href="http://www.mmmut.ac.in/" target="_parent"
-        ><img src="./images/mmmut_logo.png " alt="" class="h-32 rounded-full"
-      /></a>
-    </div>
-
-    <div class="">
-      <h1
-        class="bg-gradient-to-r from-cyan-300 to-pink-200 text-2xl md:text-4xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-2"
-      >
-        6-7 March, 2025
-      </h1>
+      <div>
+        <h1
+          class="bg-blue-200 text-xl md:text-xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-2"
+        >
+          6-7 March, 2025
+        </h1>
+      </div>
     </div>
 
     <div
       id="about_Conference"
-      class="w-3/4 mx-auto mt-12 bg-slate-400 rounded-xl overflow-hidden shadow-2xl"
+      class="w-full md:w-3/4 mx-auto mt-12 bg-blue-200 rounded-xl overflow-hidden shadow-xl"
     >
       <h1
-        class="inline-block text-2xl md:text-4xl rounded-md m-4 font-semibold text-center hover:cursor hover:scale-95 ease-in-out duration-200 text-gray-100 italic"
+        class="inline-block text-xl md:text-4xl rounded-md m-4 text-center hover:cursor text-blue-500 "
       >
-        About Conference <i class="ri-leaf-line text-pink-200"></i>
+        About Conference <i class="ri-leaf-fill text-blue-400"></i>
       </h1>
       <p
-        class="text-xs p-1 leading-normal text-slate-600    md:text-lg md:leading-loose ml-4 md:text-slate-800 bg-gradient-to-r from-cyan-300 to-pink-300 m-3 shadow-2xl rounded-lg md:p-3 font-serif"
+        class="text-xs text-justify p-1 leading-normal text-slate-600 md:text-lg md:leading-loose ml-4 md:text-slate-800 bg-slate-50 m-3 shadow-3xl rounded-lg md:p-3 font-serif md:text-justify"
       >
         Madan Mohan Malaviya University of Technology located in Gorakhpur,
         Uttar Pradesh, India is organizing conference focused on emerging
@@ -200,16 +171,16 @@
 
     <div
       id="about_mmmut"
-      class="w-3/4 mx-auto mt-12 bg-slate-400 rounded-lg overflow-hidden shadow-2xl"
+      class="md:w-3/4 mx-auto mt-12 bg-blue-200 rounded-lg overflow-hidden shadow-xl"
     >
       <h1
-         class="inline-block text-2xl md:text-4xl rounded-md m-4 font-semibold text-center hover:cursor hover:scale-95 ease-in-out duration-200 text-gray-100 italic"
+        class="inline-block text-xl md:text-4xl rounded-md m-4 text-center text-blue-500 "
       >
-      
-        About MMMUT Gorakhpur <i class="ri-leaf-line text-pink-200"></i>
+        About MMMUT Gorakhpur <i class="ri-leaf-fill text-blue-400"></i>
       </h1>
       <p
-     class="text-xs p-1 leading-normal text-slate-600    md:text-lg md:leading-loose ml-4 md:text-slate-800 bg-gradient-to-r from-cyan-300 to-pink-300 m-3 shadow-2xl rounded-lg md:p-3 font-serif">
+        class="text-xs p-1 leading-normal text-slate-600 md:text-lg md:leading-loose ml-4 md:text-slate-800 bg-slate-50 m-3 shadow-xl rounded-lg md:p-3 font-serif md:text-justify"
+      >
         Madan Mohan Malaviya University of Technology, Gorakhpur has been
         established in year 2013 by the Government of Uttar Pradesh in the form
         of a non-affiliating, affiliating, teaching and research University
@@ -230,17 +201,17 @@
 
     <div
       id="about_It&COMPUTER_APPLICATION"
-      class="w-3/4 mx-auto mt-12 bg-slate-400 rounded-lg overflow-hidden shadow-2xl"
+      class="md:w-3/4 mx-auto mt-12 bg-blue-200 rounded-lg overflow-hidden shadow-xl"
     >
       <h1
-          class="inline-block text-2xl md:text-4xl rounded-md m-4 font-semibold text-center hover:cursor hover:scale-95 ease-in-out duration-200 text-gray-100 italic"
+        class="inline-block text-xl md:text-4xl rounded-md m-4 text-center text-blue-500 "
       >
-      
         About IT & Computer Application Department
-        <i class="ri-leaf-line text-pink-200"></i>
+        <i class="ri-leaf-fill text-blue-400"></i>
       </h1>
       <p
-      class="text-xs p-1 leading-normal text-slate-600    md:text-lg md:leading-loose ml-4 md:text-slate-800 bg-gradient-to-r from-cyan-300 to-pink-300 m-3 shadow-2xl rounded-lg md:p-3 font-serif">
+        class="text-xs p-1 leading-normal text-slate-600 md:text-lg md:leading-loose ml-4 md:text-slate-800 bg-slate-50 m-3 shadow-xl rounded-lg md:p-3 font-serif md:text-justify"
+      >
         The Department of Information Technology and Computer Application (ITCA)
         was inaugurated on 24th August 2018. The department became functional
         from 25th August 2018 with two PG programs - MCA and M. Tech and Ph.D
@@ -258,24 +229,23 @@
 
     <div
       id="about_Maathematics_department"
-      class="w-3/4 mx-auto mt-12 bg-slate-400 rounded-lg overflow-hidden shadow-2xl"
+      class="md:w-3/4 mx-auto mt-12 bg-blue-200 rounded-lg overflow-hidden shadow-xl"
     >
       <h1
-         class="inline-block text-xl md:text-4xl rounded-md m-4 font-semibold text-center hover:cursor hover:scale-95 ease-in-out duration-200 text-gray-100 italic"
+        class="inline-block text-xl md:text-4xl rounded-md m-4 text-center text-blue-500 "
       >
-      
         About Mathematics & Scientific Computing Department
-        <i class="ri-leaf-line text-pink-200"></i>
+        <i class="ri-leaf-fill text-blue-400"></i>
       </h1>
       <p
-       class="text-xs p-1 leading-normal text-slate-600    md:text-lg md:leading-loose ml-4 md:text-slate-800 bg-gradient-to-r from-cyan-300 to-pink-300 m-3 shadow-2xl rounded-lg md:p-3 font-serif"
+        class="text-xs p-1 leading-normal text-slate-600 md:text-lg md:leading-loose ml-4 md:text-slate-800 bg-slate-50 m-3 shadow-xl rounded-lg md:p-3 font-serif md:text-justify"
       >
         The Department of Mathematics and Scientific Computing attained its
         present status of an independent department on 22nd June, 2019. Prior to
         this department was constituent part of Applied Science Department,
         established in 1962. The department is committed to impart the effective
-        teaching and quality research work in different areas of Mathematics and
-        Scientific Computing. Courses Offered by the Department are M.Sc.
+        teaching and qual ity research work in different areas of Mathematics
+        and Scientific Computing. Courses Offered by the Department are M.Sc.
         Mathematics (Specialization in Computing), Ph.D. in Mathematics. Besides
         this, department also offer various courses of Mathematics to
         Undergraduate and Postgraduate students of different Engineering,
@@ -285,7 +255,7 @@
 
     <div id="patron" class="text-center">
       <h1
-        class="bg-gradient-to-r from-cyan-300 to-pink-200 text-3xl md:text-5xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-1 animate-color"
+        class="bg-blue-200 text-3xl md:text-5xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-1 animate-color"
       >
         Patron
       </h1>
@@ -293,7 +263,7 @@
         <img
           src="./images/vc_image.png"
           alt=""
-          class=" h-36 w-36 rounded-full md:rounded-full md:h-48 md:w-48 mx-auto text-center hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
+          class="h-36 w-36 rounded-full md:rounded-full md:h-48 md:w-48 mx-auto text-center hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
         />
         <p class="text-xl">Prof J P Saini</p>
         <p>Hon’ble Vice Chancellor</p>
@@ -301,10 +271,13 @@
       </div>
     </div>
 
-    <div id="sub_patron" class="flex flex-col lg:flex-row justify-evenly items-center">
+    <div
+      id="sub_patron"
+      class="flex flex-col lg:flex-row justify-evenly items-center"
+    >
       <div>
         <h1
-          class="bg-gradient-to-r from-cyan-300 to-pink-200 text-2xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-1"
+          class="bg-blue-200 text-xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-1"
         >
           Chairman
         </h1>
@@ -314,16 +287,19 @@
               <div>
                 <div class="w-96 flex justify-evenly items-center">
                   <div class="w-48">
-                    <img
-                      src="./images/sub-patron_images/shiv-prakash.jpg"
-                      class="w-24 ml-12 md:w-36 md:ml-5 rounded-full hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
-                      alt=""
-                    />
+                    <a href="https://mmmut.ac.in/view?ab=9">
+                      <img
+                        src="./images/sub-patron_images/shiv-prakash.jpg"
+                        class="w-24 ml-12 md:w-36 md:ml-5 rounded-full hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
+                        alt=""
+                    /></a>
                     <p class="text-xs mt-3 md:text-sm text-center">
                       Prof Shiva Prakash Head, ITCA
                     </p>
 
-                    <p class="text-xs mt-3 md:text-sm text-center">MMMUT, Gorakhpur</p>
+                    <p class="text-xs mt-3 md:text-sm text-center">
+                      MMMUT, Gorakhpur
+                    </p>
                   </div>
                   <div class="w-48">
                     <img
@@ -331,11 +307,13 @@
                       class="w-24 ml-12 md:w-36 md:ml-5 rounded-full hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
                       alt=""
                     />
-                    <p class=" text-xs mt-3 md:text-sm text-center">
+                    <p class="text-xs mt-3 md:text-sm text-center">
                       Prof V. K. Mishra Head, MSC
                     </p>
 
-                    <p class="text-xs mt-3 md:text-sm text-center">MMMUT, Gorakhpur</p>
+                    <p class="text-xs mt-3 md:text-sm text-center">
+                      MMMUT, Gorakhpur
+                    </p>
                   </div>
                 </div>
               </div>
@@ -345,7 +323,7 @@
       </div>
       <div class="text-center">
         <h1
-          class="bg-gradient-to-r from-cyan-300 to-pink-200 text-2xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-1"
+          class="bg-blue-200 text-xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-1"
         >
           Convenors
         </h1>
@@ -358,14 +336,18 @@
                   class="w-24 ml-12 mr-4 md:w-36 md:ml-5 rounded-full hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
                   alt=""
                 />
-                <p class=" text-xs mt-3 md:text-sm text-center">Dr. R. K. Dwivedi</p>
+                <p class="text-xs mt-3 md:text-sm text-center">
+                  Dr. R. K. Dwivedi
+                </p>
 
-                <p class="text-xs mt-3 md:text-sm text-center">MMMUT, Gorakhpur</p>
+                <p class="text-xs mt-3 md:text-sm text-center">
+                  MMMUT, Gorakhpur
+                </p>
               </div>
               <div class="w-48">
                 <img
                   src="./images/sub-patron_images/ak-barnawal.jpg"
-                  class=" w-24 ml-12 md:w-36 md:ml-5 rounded-full hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
+                  class="w-24 ml-12 md:w-36 md:ml-5 rounded-full hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
                   alt=""
                 />
                 <p class="text-sm">Dr. A. K. Barnwal</p>
@@ -378,20 +360,22 @@
       </div>
       <div>
         <h1
-          class="bg-gradient-to-r from-cyan-300 to-pink-200 text-2xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-1"
+          class="bg-blue-200 text-xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-1"
         >
           Organizing Secretary
         </h1>
         <div class="flex justify-center items-center">
           <div>
-            <div class="flex justify-between md:flex md:justify-evenly items-center">
+            <div
+              class="flex justify-between md:flex md:justify-evenly items-center"
+            >
               <div class="w-40">
                 <img
                   src="./images/sub-patron_images/harish_chandra.jpg"
-                  class="w-24 mr-2 md:w-32 md:m-1 rounded-full hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
+                  class="w-24 mr-2 ml-8 md:w-32 md:m-1 rounded-full hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
                   alt=""
                 />
-                <p class=" text-xs md:text-sm text-center">Dr. Harish Chandra</p>
+                <p class="text-xs md:text-sm text-center">Dr. Harish Chandra</p>
 
                 <p class="text-xs md:text-sm text-center">MMMUT, Gorakhpur</p>
               </div>
@@ -401,7 +385,7 @@
                   class="w-24 md:w-36 ml-2 rounded-full hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
                   alt=""
                 />
-                <p class=" text-xs md:text-sm text-center">Mr. M. K. Gupta</p>
+                <p class="text-xs md:text-sm text-center">Mr. M. K. Gupta</p>
 
                 <p class="text-xs md:text-sm text-center">MMMUT, Gorakhpur</p>
               </div>
@@ -411,9 +395,13 @@
                   class="w-24 mr-1 md:w-36 ml-5 rounded-full hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
                   alt=""
                 />
-                <p class="text-xs md:text-sm text-center ml-5">Ms. Kumud Patel</p>
+                <p class="text-xs md:text-sm text-center ml-5">
+                  Ms. Kumud Patel
+                </p>
 
-                <p class="text-xs md:text-sm text-center ml-5">MMMUT,Gorakhpur</p>
+                <p class="text-xs md:text-sm text-center ml-5">
+                  MMMUT,Gorakhpur
+                </p>
               </div>
             </div>
           </div>
@@ -423,399 +411,403 @@
 
     <div id="key_note_speaker">
       <h1
-        class="bg-gradient-to-r from-cyan-300 to-pink-200  text-3xl md:text-4xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-2"
+        class="bg-blue-200 text-3xl md:text-4xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-2"
       >
         Key Note Speakers
       </h1>
-      <div class="flex justify-center items-center w-full md:flex flex-row md:justify-evenly md:w-3/4 mx-auto">
-        <div class="w-24 md:w-96">
+      <div
+        class="flex justify-evenly items-center w-full md:flex flex-row md:justify-evenly md:w-3/4 mx-auto mt-16 mb-16"
+      >
+        <div class="w-24 h-36 md:w-96">
           <img
             src="./images/key_note_speakers/ali_ahmadian.jpg"
-            class=" w-16 md:w-36  rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
+            class="w-20 md:w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
             alt=""
           />
           <p class="text-xs text-center">Dr. Ali Ahmadian</p>
-          <p class=" text-xs text-center">University Kebangsaan, Malaysia</p>
+          <p class="text-xs text-center">University Kebangsaan, Malaysia</p>
         </div>
-        <div class="w-24 md:w-96">
+        <div class="w-24  h-36 md:w-96">
           <img
             src="./images/key_note_speakers/lobiyal.jpg"
-            class=" w-20 md:w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
+            class="w-20 md:w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
             alt=""
           />
           <p class="text-xs text-center">Prof. D. K. Lobiyal</p>
           <p class="text-xs text-center">JNU, New Delhi</p>
         </div>
-        <div class="w-24 md:w-96">
+        <div class="w-24 h-36 md:w-96">
           <img
             src="./images/key_note_speakers/rs_yadav.jpg"
             class="w-20 md:w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
             alt=""
           />
-          <p class=" text-xs text-center">Prof R. S. Yadav</p>
-          <p class=" text-xs text-center">MNNIT, Prayagraj</p>
+          <p class="text-xs text-center">Prof R. S. Yadav</p>
+          <p class="text-xs text-center">MNNIT, Prayagraj</p>
         </div>
-        <div class="w-24 md:w-96">
+        <div class="w-24 h-36 md:w-96">
           <img
             src="./images/key_note_speakers/aditya_trivedi.jpg"
             class="w-20 md:w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
             alt=""
           />
           <p class="text-xs text-center">Prof. Aditya Trivedi</p>
-          <p class=" text-xs text-center">IIIT Gwaloir</p>
+          <p class="text-xs text-center">IIIT Gwaloir</p>
         </div>
       </div>
-      <div class="flex justify-evenly items-center w-3/4 mx-auto m-4">
-        <div class="w-24 md:w-96">
+      <div class="flex justify-around items-center ml-8 md:w-3/4 md:ml-36 mb-12">
+        <div class="w-24 h-36 md:w-96">
           <img
             src="./images/key_note_speakers/tibor.png"
             class="w-20 md:w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
             alt=""
           />
-          <p class=" text-xs text-center">Dr. Juhász Tibor</p>
-          <p class=" text-xs text-center">Catholic University Hungary</p>
+          <p class="text-xs text-center">Dr. Juhász Tibor</p>
+          <p class="text-xs text-center">Catholic University Hungary</p>
         </div>
-        <div class="w-24 md:w-96">
+        <div class="w-24 h-36 md:w-96">
           <img
             src="./images/key_note_speakers/shalabh.jpg"
             class="w-20 md:w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
             alt=""
           />
-          <p class=" text-xs text-center">Prof. Shalabh</p>
-          <p class=" text-xs text-center">IIT Kanpur</p>
+          <p class="text-xs text-center">Prof. Shalabh</p>
+          <p class="text-xs text-center">IIT Kanpur</p>
         </div>
-        <div class="w-24 md:w-96">
+        <div class="w-24 h-36 md:w-96">
           <img
             src="./images/key_note_speakers/rk_sharma.jpg"
             class="w-20 md:w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300 border-2 border-gray-100"
             alt=""
           />
-          <p class=" text-xs text-center">Prof. R.K Sharma</p>
-          <p class=" text-xs text-center">IIT, Delhi</p>
+          <p class="text-xs text-center">Prof. R.K Sharma</p>
+          <p class="text-xs text-center">IIT, Delhi</p>
         </div>
       </div>
     </div>
 
     <div id="advisory_commitee">
       <h1
-        class="bg-gradient-to-r from-cyan-300 to-pink-200 text-4xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-2"
+        class="bg-blue-200 text-4xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-2"
       >
         Advisory Commitee
       </h1>
-      <div class=" flex flex-row md:flex justify-evenly md:flex-col">
-      <div class="flex flex-col md:flex justify-evenly items-center md:flex-row">
-        
-        <div>
-             <img
-            src="./images/advisory_committee/rk_buyya.jpg"
-            class="w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
-            alt=""
-          />
-          <p class="text-center">Prof R K Buyya</p>
-          <p class="text-center">Melbourne University Australia</p>
+      <div class="flex flex-row md:flex justify-evenly md:flex-col gap-16">
+        <div
+          class="flex flex-col md:flex justify-evenly items-center md:flex-row"
+        >
+          <div>
+            <img
+              src="./images/advisory_committee/rk_buyya.jpg"
+              class="w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
+              alt=""
+            />
+            <p class="text-center">Prof R K Buyya</p>
+            <p class="text-center">Melbourne University Australia</p>
+          </div>
+          <div>
+            <img
+              src="./images/advisory_committee/manoj-misra.jpg"
+              class="w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
+              alt=""
+            />
+            <p class="text-center">Prof Manoj Misra</p>
+            <p class="text-center">IIT Roorkee</p>
+          </div>
+          <div>
+            <img
+              src="./images/advisory_committee/gr-sinha.jpg"
+              class="w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
+              alt=""
+            />
+            <p class="text-center">Prof G R Sinha</p>
+            <p class="text-center">IISC Bangalore</p>
+          </div>
+          <div>
+            <img
+              src="./images/advisory_committee/rajeev-srivastav.jpg"
+              class="w-32 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
+              alt=""
+            />
+            <p class="text-center">Prof Rajeev Srivastava</p>
+            <p class="text-center">IIT BHU</p>
+          </div>
+          <div>
+            <img
+              src="./images/advisory_committee/pk-mishra.jpg"
+              class="w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
+              alt=""
+            />
+            <p class="text-center">Prof. P. K. Mishra</p>
+            <p class="text-center">IIT BHU</p>
+          </div>
+          <div>
+            <img
+              src="./images/advisory_committee/shekhar-verma.jpg"
+              class="w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
+              alt=""
+            />
+            <p class="text-center">Prof Shekhar Verma</p>
+            <p class="text-center">IIIT Praygraj</p>
+          </div>
+          <div>
+            <img
+              src="./images/advisory_committee/sk-singh.jpg "
+              class="w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
+              alt=""
+            />
+            <p class="text-center">Prof Shekhar Verma</p>
+            <p class="text-center">IIIT Praygraj</p>
+          </div>
         </div>
-        <div>
-          <img
-            src="./images/advisory_committee/manoj-misra.jpg"
-            class="w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
-            alt=""
-          />
-          <p class="text-center">Prof Manoj Misra</p>
-          <p class="text-center">IIT Roorkee</p>
+        <div
+          class="flex flex-col md:flex justify-evenly md:flex-row items-center p-4"
+        >
+          <div>
+            <img
+              src="./images/advisory_committee/rs-yadav1.jpg"
+              class="w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
+              alt=""
+            />
+            <p class="text-center">Prof R S Yadav</p>
+            <p class="text-center">NIT Prayagra</p>
+          </div>
+          <div>
+            <img
+              src="./images/advisory_committee/sk-singh_prayagraj.jpg"
+              class="w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
+              alt=""
+            />
+            <p class="text-center">Prof S K Singh</p>
+            <p class="text-center">IIIT Prayagra</p>
+          </div>
+          <div>
+            <img
+              src="./images/advisory_committee/nanhay-singh.png"
+              class="w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
+              alt=""
+            />
+            <p class="text-center">Prof. Nanhay Singh</p>
+            <p class="text-center">NSUT New Delhi</p>
+          </div>
+          <div>
+            <img
+              src="./images/advisory_committee/vivek=sahai.jpg"
+              class="w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
+              alt=""
+            />
+            <p class="text-center">Prof Vivek Sahai</p>
+            <p class="text-center">University of Lucknow</p>
+          </div>
+          <div>
+            <img
+              src="./images/advisory_committee/s-singh.png"
+              class="w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
+              alt=""
+            />
+            <p class="text-center">Prof S. Singh</p>
+            <p class="text-center">PEC, Chandigarh</p>
+          </div>
+          <div>
+            <img
+              src="./images/advisory_committee/shivdutt-kumar.jpg"
+              class="w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
+              alt=""
+            />
+            <p class="text-center">Prof. Shiv Datt Kumar</p>
+            <p class="text-center">MNNIT Pryagra</p>
+          </div>
+          <div>
+            <img
+              src="./images/advisory_committee/kv-arya.jpg"
+              class="w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
+              alt=""
+            />
+            <p class="text-center">Prof. K. V.</p>
+            <p class="text-center">Arya IIIT Gwaliar</p>
+          </div>
         </div>
-        <div>
-          <img
-            src="./images/advisory_committee/gr-sinha.jpg"
-            class="w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
-            alt=""
-          />
-          <p class="text-center">Prof G R Sinha</p>
-          <p class="text-center">IISC Bangalore</p>
-        </div>
-        <div>
-          <img
-            src="./images/advisory_committee/rajeev-srivastav.jpg"
-            class="w-32 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
-            alt=""
-          />
-          <p class="text-center">Prof Rajeev Srivastava</p>
-          <p class="text-center">IIT BHU</p>
-        </div>
-        <div>
-          <img
-            src="./images/advisory_committee/pk-mishra.jpg"
-            class="w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
-            alt=""
-          />
-          <p class="text-center">Prof. P. K. Mishra</p>
-          <p class="text-center">IIT BHU</p>
-        </div>
-        <div>
-          <img
-            src="./images/advisory_committee/shekhar-verma.jpg"
-            class="w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
-            alt=""
-          />
-          <p class="text-center">Prof Shekhar Verma</p>
-          <p class="text-center">IIIT Praygraj</p>
-        </div>
-        <div>
-          <img
-            src="./images/advisory_committee/sk-singh.jpg "
-            class="w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
-            alt=""
-          />
-          <p class="text-center">Prof Shekhar Verma</p>
-          <p class="text-center">IIIT Praygraj</p>
-        </div>
-      </div>
-      <div class=" flex flex-col md:flex justify-evenly md:flex-row items-center p-4">
-        <div >
-          <img
-            src="./images/advisory_committee/rs-yadav1.jpg"
-            class="w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
-            alt=""
-          />
-          <p class="text-center">Prof R S Yadav</p>
-          <p class="text-center">NIT Prayagra</p>
-        </div>
-        <div>
-          <img
-            src="./images/advisory_committee/sk-singh_prayagraj.jpg"
-            class="w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
-            alt=""
-          />
-          <p class="text-center">Prof S K Singh</p>
-          <p class="text-center">IIIT Prayagra</p>
-        </div>
-        <div>
-          <img
-            src="./images/advisory_committee/nanhay-singh.png"
-            class="w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
-            alt=""
-          />
-          <p class="text-center">Prof. Nanhay Singh</p>
-          <p class="text-center">NSUT New Delhi</p>
-        </div>
-        <div>
-          <img
-            src="./images/advisory_committee/vivek=sahai.jpg"
-            class="w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
-            alt=""
-          />
-          <p class="text-center">Prof Vivek Sahai</p>
-          <p class="text-center">University of Lucknow</p>
-        </div>
-        <div>
-          <img
-            src="./images/advisory_committee/s-singh.png"
-            class="w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
-            alt=""
-          />
-          <p class="text-center">Prof S. Singh</p>
-          <p class="text-center">PEC, Chandigarh</p>
-        </div>
-        <div>
-          <img
-            src="./images/advisory_committee/shivdutt-kumar.jpg"
-            class="w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
-            alt=""
-          />
-          <p class="text-center">Prof. Shiv Datt Kumar</p>
-          <p class="text-center">MNNIT Pryagra</p>
-        </div>
-        <div>
-          <img
-            src="./images/advisory_committee/kv-arya.jpg"
-            class="w-36 rounded-full mx-auto hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
-            alt=""
-          />
-          <p class="text-center">Prof. K. V.</p>
-          <p class="text-center">Arya IIIT Gwaliar</p>
-        </div>
-      </div>
       </div>
     </div>
 
     <div id="technical_program_commitee">
       <h1
-        class="bg-gradient-to-r from-cyan-300 to-pink-200 text-2xl md:text-4xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-2"
+        class="bg-blue-200 text-xl md:text-4xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-2"
       >
         Technical program committee
       </h1>
       <div
-        class="flex justify-around items-centerbg-gradient-to-r from-cyan-300 to-pink-200"
+        class="flex px-6 flex-wrap md:flex md:justify-between md:px-20 items-center"
       >
         <div>
-          <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+          <p class="text-smm md:text-lg leading-loose text-slate-700">
+            <i class="ri-leaf-fill text-blue-400"></i>
             Dr. Anurag Singh, NIT Delhi
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Dr. Gaurav Barnwal, BHU Varanshi
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Prof. Divakar Yadav, IGNOU New Delhi
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Prof. Om Prakash, IIT Patna
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Dr. Karan Singh, JNU New Delhi
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Dr. Vaibhav Prakash, MNNIT, Prayagraj
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Dr. Ashutosh Bhatt, Uttarakhand Open University
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Dr. Updendra kumar, IET Lucknow
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Dr. Rajendra Kumar, JMI New Delhi
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Dr. Anil Kr. Bisth, MJP Rohelkhand University
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Dr. Imran Khan, HBTI Kanpur
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Dr. Hari Prabhat Gupta, IIT BHU
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Dr. Saurabh Singh, BHU Varanashi
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Dr. Dharmendra Mishra, MANIT Bhopal
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Dr. Rakesh Chandra Joshi, Amity University, Noida
           </p>
         </div>
+
         <div>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Dr. Rakesh Chandra Joshi, Amity University, Noida
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Prof. Nanhay Singh, NSUT New Delhi
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Dr. N. P. Singh, NIT Jalandhar
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Dr. Sanjoy Das, IGNTU MP
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Prof. R. S. Rao, NSUT Delhi
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Dr. Anuj Kumar, MNNIT Prayagraj
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Dr. Ashish Shrivastava, GLA Mathura
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Dr. Awadhesh Kumar, KNIT Sultanpur
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Dr. Shashank Gupta, BIET Jhansi
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Dr. Ravi Sharma, Galgootias University, Gr. Noida
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Dr. Vinay Gupta, GuruTeg Bahadur University
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Dr. Saurabh Rana, Bennet University, Gr. Noida
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Dr. Pawan Chaurasiya, BBAU Lucknow
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Dr. Mukesh Awasthi, BBAU Lucknow
           </p>
           <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
+            <i class="ri-leaf-fill text-blue-400"></i>
             Dr. A. K. Verma, IIT Patna
-          </p>
-          <p class="text-sm md:text-lg leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>
-            Dr. Rakesh Chandra Joshi, Amity University, Noida
           </p>
         </div>
       </div>
     </div>
 
     <div id="publicity_committee">
-       <h1
-        class="bg-gradient-to-r from-cyan-300 to-pink-200 text-4xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-2"
+      <h1
+        class="bg-blue-200 text-4xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-2"
       >
-        publicity Committee
+        Publicity Committee
       </h1>
-      <div class="flex justify-evenly items-center text-lg leading-loose">
+      <div
+        class="flex flex-wrap md:flex md:justify-between md:px-20 items-center text-lg leading-loose"
+      >
         <div>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>SP singh
+            <i class="ri-leaf-fill text-blue-400"></i>SP singh
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Dr Abhijeet Mishra
+            <i class="ri-leaf-fill text-blue-400"></i>Dr Abhijeet Mishra
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Mrs Hemlata
+            <i class="ri-leaf-fill text-blue-400"></i>Mrs Hemlata
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Mr. K. K. Gautam
+            <i class="ri-leaf-fill text-blue-400"></i>Mr. K. K. Gautam
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Ms. Alka Maurya
+            <i class="ri-leaf-fill text-blue-400"></i>Ms. Alka Maurya
           </p>
         </div>
         <div>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Ms. Nida Shakeel
+            <i class="ri-leaf-fill text-blue-400"></i>Ms. Nida Shakeel
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Mr. Saurabh Mishra
+            <i class="ri-leaf-fill text-blue-400"></i>Mr. Saurabh Mishra
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Mr Shivendra Kumar
+            <i class="ri-leaf-fill text-blue-400"></i>Mr Shivendra Kumar
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Mr. Dharmendra
+            <i class="ri-leaf-fill text-blue-400"></i>Mr. Dharmendra
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Ms. Sweetie Gupta
+            <i class="ri-leaf-fill text-blue-400"></i>Ms. Sweetie Gupta
           </p>
         </div>
       </div>
@@ -823,55 +815,57 @@
 
     <div id="organising_committee">
       <h1
-        class="bg-gradient-to-r from-cyan-300 to-pink-200 text-4xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-2"
+        class="bg-blue-200 text-4xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-2"
       >
         Organising committee
       </h1>
-      <div class="flex justify-evenly items-center">
+      <div
+        class="flex flex-wrap px-8 md:flex md:justify-between md:px-20 items-center"
+      >
         <div>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Prof Shiva Prakash
+            <i class="ri-leaf-fill text-blue-400"></i>Prof Shiva Prakash
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Prof S. P. Singh
+            <i class="ri-leaf-fill text-blue-400"></i>Prof S. P. Singh
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Prof U. C. Jaiswal
+            <i class="ri-leaf-fill text-blue-400"></i>Prof U. C. Jaiswal
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Dr. D.S. Singh
+            <i class="ri-leaf-fill text-blue-400"></i>Dr. D.S. Singh
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Dr R. K. Dwivedi
+            <i class="ri-leaf-fill text-blue-400"></i>Dr R. K. Dwivedi
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Ms. Pranjal Maurya
+            <i class="ri-leaf-fill text-blue-400"></i>Ms. Pranjal Maurya
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Ms. Prachi Verma
+            <i class="ri-leaf-fill text-blue-400"></i>Ms. Prachi Verma
           </p>
         </div>
         <div>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i> Mr. Manish Kr. Gupta
+            <i class="ri-leaf-fill text-blue-400"></i> Mr. Manish Kr. Gupta
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Ms. Kumud Patel
+            <i class="ri-leaf-fill text-blue-400"></i>Ms. Kumud Patel
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Prof V. K. Mishra
+            <i class="ri-leaf-fill text-blue-400"></i>Prof V. K. Mishra
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Dr. A. K. Barnwal
+            <i class="ri-leaf-fill text-blue-400"></i>Dr. A. K. Barnwal
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Dr. Harish Chandra
+            <i class="ri-leaf-fill text-blue-400"></i>Dr. Harish Chandra
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Mr. Vijay Kumar Tiwari
+            <i class="ri-leaf-fill text-blue-400"></i>Mr. Vijay Kumar Tiwari
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Ms. Preeti Singh
+            <i class="ri-leaf-fill text-blue-400"></i>Ms. Preeti Singh
           </p>
         </div>
       </div>
@@ -879,67 +873,69 @@
 
     <div id="hospitality_committee">
       <h1
-        class="bg-gradient-to-r from-cyan-300 to-pink-200 text-4xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-2"
+        class="bg-blue-200 text-4xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-2"
       >
         Hospitality Committee
       </h1>
-      <div class="flex justify-evenly items-center">
+      <div
+        class="flex flex-wrap px-8 md:flex md:justify-between md:px-20 items-center"
+      >
         <div>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i> Dr D S Singh
+            <i class="ri-leaf-fill text-blue-400"></i> Dr D S Singh
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i> Dr Jay Prakash
+            <i class="ri-leaf-fill text-blue-400"></i> Dr Jay Prakash
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i> Mr Vijay Kumar Tiwari
+            <i class="ri-leaf-fill text-blue-400"></i> Mr Vijay Kumar Tiwari
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Ms. Prachi Verma
+            <i class="ri-leaf-fill text-blue-400"></i>Ms. Prachi Verma
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i> Ms. Preeti Singh
+            <i class="ri-leaf-fill text-blue-400"></i> Ms. Preeti Singh
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i> Ms Pranjal Maurya
+            <i class="ri-leaf-fill text-blue-400"></i> Ms Pranjal Maurya
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Mr Sanjeev Kumar Singh
+            <i class="ri-leaf-fill text-blue-400"></i>Mr Sanjeev Kumar Singh
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i> Ms. Ritu Singh
+            <i class="ri-leaf-fill text-blue-400"></i> Ms. Ritu Singh
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i> Ms. Neelam Chauhan
+            <i class="ri-leaf-fill text-blue-400"></i> Ms. Neelam Chauhan
           </p>
         </div>
         <div>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i> Ms. Anju Verma
+            <i class="ri-leaf-fill text-blue-400"></i> Ms. Anju Verma
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i> Mr. Durgesh Kr. Yadav
+            <i class="ri-leaf-fill text-blue-400"></i> Mr. Durgesh Kr. Yadav
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i> Mr. Sumit Kumar
+            <i class="ri-leaf-fill text-blue-400"></i> Mr. Sumit Kumar
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i> Ms. Niharika Singh
+            <i class="ri-leaf-fill text-blue-400"></i> Ms. Niharika Singh
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i> Ms. Akansha Singh
+            <i class="ri-leaf-fill text-blue-400"></i> Ms. Akansha Singh
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i> Ms. Lacchita Soni
+            <i class="ri-leaf-fill text-blue-400"></i> Ms. Lacchita Soni
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i> Mr Shivendra Kumar
+            <i class="ri-leaf-fill text-blue-400"></i> Mr Shivendra Kumar
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i> Mr Saurabh Mishra
+            <i class="ri-leaf-fill text-blue-400"></i> Mr Saurabh Mishra
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i> Ms. Sweetie Gupta
+            <i class="ri-leaf-fill text-blue-400"></i> Ms. Sweetie Gupta
           </p>
         </div>
       </div>
@@ -947,44 +943,46 @@
 
     <div id="transport_committee">
       <h1
-        class="bg-gradient-to-r from-cyan-300 to-pink-200 text-4xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-2"
+        class="bg-blue-200 text-4xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-2"
       >
         Transport Committee
       </h1>
 
-      <div class="flex justify-evenly items-center">
+      <div
+        class="flex flex-wrap px-8 md:flex md:justify-between md:px-20 items-center"
+      >
         <div>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i> Dr. Rajan Mishra
+            <i class="ri-leaf-fill text-blue-400"></i> Dr. Rajan Mishra
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i> Mr Vijay Kumar Tiwari
+            <i class="ri-leaf-fill text-blue-400"></i> Mr Vijay Kumar Tiwari
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i> Ms. Prachi Verma
+            <i class="ri-leaf-fill text-blue-400"></i> Ms. Prachi Verma
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i> Ms. Ritu Singh
+            <i class="ri-leaf-fill text-blue-400"></i> Ms. Ritu Singh
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i> Mr. Anand Kumar
+            <i class="ri-leaf-fill text-blue-400"></i> Mr. Anand Kumar
           </p>
         </div>
         <div>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i> Mr. Dharmesh Sonkar
+            <i class="ri-leaf-fill text-blue-400"></i> Mr. Dharmesh Sonkar
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i> Ms. Rajni Kumari
+            <i class="ri-leaf-fill text-blue-400"></i> Ms. Rajni Kumari
           </p>
           <p class="text-xl leading-loose text-slate-700">
-             <i class="ri-leaf-fill text-pink-300"></i> Ms. Diksha Upadhyay
+            <i class="ri-leaf-fill text-blue-400"></i> Ms. Diksha Upadhyay
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i> Mr. Shivendra Kumar
+            <i class="ri-leaf-fill text-blue-400"></i> Mr. Shivendra Kumar
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i> Mr Saurabh Mishra
+            <i class="ri-leaf-fill text-blue-400"></i> Mr Saurabh Mishra
           </p>
         </div>
       </div>
@@ -992,57 +990,59 @@
 
     <div id="invitation_committee">
       <h1
-        class="bg-gradient-to-r from-cyan-300 to-pink-200 text-4xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-2"
+        class="bg-blue-200 text-4xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-2"
       >
         Invitation Committee
       </h1>
-      <div class="flex justify-evenly items-center leading-loose">
+      <div
+        class="flex flex-wrap px-8 md:flex md:justify-between md:px-20 items-center leading-loose"
+      >
         <div>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Prof U. C. Jaiswal
+            <i class="ri-leaf-fill text-blue-400"></i>Prof U. C. Jaiswal
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Ms. Preeti Singh
+            <i class="ri-leaf-fill text-blue-400"></i>Ms. Preeti Singh
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Ms Pranjal Maurya
+            <i class="ri-leaf-fill text-blue-400"></i>Ms Pranjal Maurya
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Mr. K. M. Pathak
+            <i class="ri-leaf-fill text-blue-400"></i>Mr. K. M. Pathak
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Mr. K. K. Gautam
+            <i class="ri-leaf-fill text-blue-400"></i>Mr. K. K. Gautam
           </p>
         </div>
         <div>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Ms. Nida Shakeel
+            <i class="ri-leaf-fill text-blue-400"></i>Ms. Nida Shakeel
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Ms. Alka Maurya
+            <i class="ri-leaf-fill text-blue-400"></i>Ms. Alka Maurya
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Mr. Saurabh Mishra
+            <i class="ri-leaf-fill text-blue-400"></i>Mr. Saurabh Mishra
           </p>
           <p class="text-xl leading-loose text-slate-700">
-            <i class="ri-leaf-fill text-pink-300"></i>Mr. Dharmendra
+            <i class="ri-leaf-fill text-blue-400"></i>Mr. Dharmendra
           </p>
         </div>
       </div>
     </div>
 
-    <div id="Tracks" class="leading-loose p-2">
+    <div id="Tracks" class="leading-loose p-8 text-justify">
       <h1
-        class="bg-gradient-to-r from-cyan-300 to-pink-200 text-4xl shadow-lg rounded-md m-2 text-black-700 text-center pb-2"
+        class="bg-blue-200 text-3xl md:text-4xl shadow-lg rounded-md m-2 text-slate-900 text-center pb-2"
       >
         Tracks of Conference
       </h1>
 
       <div class="mb-1 p-2">
-        <h1 class="text-3xl font-normal mb-2 text-pink-700">
-          TRACK 1,<span class="text-black text-2xl"> Computing: </span>
+        <h1 class="text-xl font-normal mb-2 text-blue-500">
+          TRACK 1,<span class="text-xl text-blue-400"> Computing: </span>
         </h1>
-        <p class="leading-relaxed text-lg pr-2">
+        <p class="md:leading-relaxed text-lg md:pr-2">
           Computing: Quantum computing, high-performance computing, distributed
           and parallel systems, cognitive computing, cloud computing, grid
           computing, embedded computing, edge computing, human-centered
@@ -1051,8 +1051,8 @@
       </div>
 
       <div class="mb-2 p-2">
-        <h1 class="text-3xl font-normal mb-2 text-pink-700">
-          TRACK 2,<span class="text-black text-2xl">
+        <h1 class="text-xl font-normal mb-2 text-blue-500">
+          TRACK 2,<span class="text-blue-400 text-xl">
             Artificial Intelligence:
           </span>
         </h1>
@@ -1065,8 +1065,8 @@
       </div>
 
       <div class="mb-2 p-2">
-        <h1 class="text-3xl font-normal mb-2 text-pink-700">
-          TRACK 3,<span class="text-black text-2xl"> Computer Vision: </span>
+        <h1 class="text-xl font-normal mb-2 text-blue-500">
+          TRACK 3,<span class="text-blue-400 text-xl"> Computer Vision: </span>
         </h1>
         <p class="text-lg leading-relaxed">
           Human-Computer Interaction, Autonomous vehicles, Image Processing,
@@ -1077,8 +1077,8 @@
       </div>
 
       <div class="mb-2 p-2">
-        <h1 class="text-3xl font-normal mb-2 text-pink-700">
-          TRACK 4,<span class="text-black text-2xl">Data Science:</span>
+        <h1 class="text-xl font-normal mb-2 text-blue-500">
+          TRACK 4,<span class="text-blue-400 text-xl">Data Science:</span>
         </h1>
         <p class="text-lg leading-relaxed">
           Big Data, Data Analytics, Predictive Analytics, Data Mining, Natural
@@ -1088,8 +1088,9 @@
       </div>
 
       <div class="mb-2 p-2">
-        <h1 class="text-3xl font-normal mb-2 text-pink-700">
-          TRCK 5, <span class="text-black text-2xl"> Technology Trends: </span>
+        <h1 class="text-xl font-normal mb-2 text-blue-500">
+          TRCK 5,
+          <span class="text-blue-400 text-xl"> Technology Trends: </span>
         </h1>
         <p class="text-lg leading-relaxed pr-2">
           Internet of Things, Blockchain, Crypto currencies, 5G/6G Network
@@ -1100,9 +1101,9 @@
       </div>
 
       <div class="mb-2 p-2">
-        <h1 class="text-3xl font-normal mb-2 text-pink-700">
+        <h1 class="text-xl font-normal mb-2 text-blue-500">
           TRACK 6,
-          <span class="text-black text-2xl">
+          <span class="text-blue-400 text-xl">
             Algebra, Cryptography and Computing Algebra:</span
           >
         </h1>
@@ -1117,17 +1118,32 @@
 
     <div id="important_dates">
       <h1
-        class="bg-gradient-to-r from-cyan-300 to-pink-200 text-4xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-2"
+        class="bg-blue-200 text-4xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-2"
       >
         Important Dates
       </h1>
       <div class="flex justify-evenly items-center">
         <div class="text-xl leading-loose">
-          <p>Paper Submission Starts</p>
-          <p>Paper Submission Deadline</p>
-          <p>Acceptance Notification</p>
-          <p>Start of Registration</p>
-          <p>End of Registration</p>
+          <p>
+            <i class="ri-arrow-right-circle-fill text-blue-400"></i> Paper
+            Submission Starts
+          </p>
+          <p>
+            <i class="ri-arrow-right-circle-fill text-blue-400"></i> Paper
+            Submission Deadline
+          </p>
+          <p>
+            <i class="ri-arrow-right-circle-fill text-blue-400"></i> Acceptance
+            Notification
+          </p>
+          <p>
+            <i class="ri-arrow-right-circle-fill text-blue-400"></i> Start of
+            Registration
+          </p>
+          <p>
+            <i class="ri-arrow-right-circle-fill text-blue-400"></i> End of
+            Registration
+          </p>
         </div>
         <div class="text-xl leading-loose">
           <p>20 Oct 2024</p>
@@ -1141,62 +1157,62 @@
 
     <div id="registration_fee">
       <h1
-        class="bg-gradient-to-r from-cyan-300 to-pink-200 text-4xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-2"
+        class="bg-blue-200 text-4xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-2"
       >
         Registration Fee
       </h1>
-        <div class="flex justify-evenly">
-            <div  >
-            <p class="ml-24 md:ml-48 text-lg lg:text-3xl text-pink-400">Early Registration</p>
-            </div>
-           <div class="md:ml-48 text-lg lg:text-3xl text-pink-400">
-            <p class="text-center">Late Registration</p>
-           </div>
-         </div>
+      <div class="flex justify-evenly">
+        <div>
+          <p class="ml-24 md:ml-48 text-lg lg:text-3xl text-blue-400">
+            Early Registration
+          </p>
+        </div>
+        <div class="md:ml-48 text-lg lg:text-3xl text-blue-400">
+          <p class="text-center">Late Registration</p>
+        </div>
+      </div>
       <div class="flex justify-evenly items-center">
         <div class="text-start text-slate-800 text-lg leading-loose">
-       
-          <h1 class="text-sm mt-5 md:text-2xl md:mt-0">Category</h1>
-          <p >Students</p>
+          <h1 class="text-sm mt-5 md:text-xl md:mt-0">Category</h1>
+          <p>Students</p>
           <p>Faculty</p>
           <p>Industry</p>
           <p>Participants</p>
         </div>
         <div class="text-start text-slate-800 text-lg leading-loose mt-2">
-          <h1 class="text-sm md:text-2xl">Indian Delegates</h1>
+          <h1 class="text-sm md:text-xl">Indian Delegates</h1>
           <p>Rs.4500</p>
           <p>Rs.5500</p>
           <p>Rs.7500</p>
           <p>Rs. 2000</p>
         </div>
         <div class="text-start text-slate-800 text-lg leading-loose mt-2">
-          <h1 class="text-sm md:text-2xl">Foreign Delegates</h1>
+          <h1 class="text-sm md:text-xl">Foreign Delegates</h1>
           <p>USD 100</p>
           <p>USD 150</p>
           <p>USD 200</p>
           <p>USD 50</p>
         </div>
         <div class="text-start text-slate-800 text-lg leading-loose mt-2">
-          <h1 class="text-sm md:text-2xl">Indian Delegates</h1>
+          <h1 class="text-sm md:text-xl">Indian Delegates</h1>
           <p>Rs.5000</p>
           <p>Rs.6000</p>
           <p>Rs.8000</p>
           <p>Rs. 2500</p>
         </div>
         <div class="text-start text-slate-800 text-lg leading-loose mt-2">
-          <h1 class="text-sm md:text-2xl">Foreign Delegates</h1>
+          <h1 class="text-sm md:text-xl">Foreign Delegates</h1>
           <p>USD 120</p>
           <p>USD 170</p>
           <p>USD 220</p>
           <p>USD 70</p>
         </div>
       </div>
-      
     </div>
 
     <div id="places_to_visit">
       <h1
-        class="bg-gradient-to-r from-cyan-300 to-pink-200 text-4xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-2"
+        class="bg-blue-200 text-4xl shadow-lg rounded-md m-4 text-black-700 text-center items-center pb-2"
       >
         Nearest Places to Visit
       </h1>
@@ -1205,24 +1221,24 @@
           <a href="https://www.gorakhnathmandir.in/" target="_parent">
             <img
               src="./images/places_to_visit/gorakhnath_temple.png"
-              class=" h-24 w-36 ml-2 md:h-72 md:w-96 rounded-md hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
+              class="h-24 w-36 ml-2 md:h-48 md:w-64 rounded-md hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
               alt=""
           /></a>
 
-          <p class="text-xs md:text-2xl text-center">
-            Gorakhnath:10km 
+          <p class="text-xs md:text-xl text-center bg-blue-100">
+            Gorakhnath:10km
           </p>
         </div>
         <div class="overflow-hidden">
-               <a href="https://www.gitapress.org/" target="_parent">
-        <img
+          <a href="https://www.gitapress.org/" target="_parent">
+            <img
               src="./images/places_to_visit/geetapress_temple.png"
-              class=" h-24 w-36  md:h-72 md:w-96 rounded-md hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
+              class="h-24 w-36 md:h-48 md:w-64 rounded-md hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
               alt=""
           /></a>
 
-          <p class="text-xs md:text-2xl text-center">
-            Geeta Press:15km 
+          <p class="text-xs md:text-xl text-center bg-blue-100">
+            Geeta Press:15km
           </p>
         </div>
         <div class="overflow-hidden">
@@ -1230,15 +1246,13 @@
             href="https://gorakhpur.nic.in/tourist-place/maghar/"
             target="_blank"
           >
-          <img
+            <img
               src="./images/places_to_visit/maghar_temple.png"
-              class=" h-24 w-36 md:h-72 md:w-96 rounded-md hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
+              class="h-24 w-36 md:h-48 md:w-64 rounded-md hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
               alt=""
           /></a>
 
-          <p class="text-xs md:text-2xl text-center">
-            Maghar:35km 
-          </p>
+          <p class="text-xs md:text-xl text-center bg-blue-100">Maghar:35km</p>
         </div>
       </div>
       <div class="flex justify-evenly items-center">
@@ -1246,49 +1260,51 @@
           <a href="https://kushinagar.nic.in/" target="_parent">
             <img
               src="./images/places_to_visit/kushinagar_temple.png"
-              class="h-24 w-36 ml-2 md:h-72 md:w-96 rounded-md hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
+              class="h-24 w-36 ml-2 md:h-48 md:w-64 rounded-md hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
               alt=""
           /></a>
 
-          <p class="text-xs md:text-2xl text-center">
-            Kushinagar:60km 
+          <p class="text-xs md:text-xl text-center bg-blue-100">
+            Kushinagar:60km
           </p>
         </div>
         <div class="overflow-hidden">
           <a href="https://uptourism.gov.in/en/page/ayodhya">
             <img
               src="./images/places_to_visit/ayodhya_dham.png"
-              class="h-24 w-36 md:h-72 md:w-96 rounded-md hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
+              class="h-24 w-36 md:h-48 md:w-64 rounded-md hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
               alt=""
           /></a>
-          <p class="text-xs md:text-2xl text-center">
-            Ayodhya Dham:155km 
+          <p class="text-xs md:text-xl text-center bg-blue-100">
+            Ayodhya Dham:155km
           </p>
         </div>
         <div class="overflow-hidden">
           <a href="https://en.wikipedia.org/wiki/Lumbini" target="_parent">
             <img
               src="./images/places_to_visit/lumbani_temple.png"
-              class="h-24 w-36 md:h-72 md:w-96 rounded-md hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
+              class="h-24 w-36 md:h-48 md:w-64 rounded-md hover:cursor-pointer hover:scale-105 ease-in-out duration-300"
               alt=""
           /></a>
-          <p class="text-xs md:text-2xl text-center">
+          <p class="text-xs md:text-xl text-center bg-blue-100">
             Lumbini,Nepal:130km
           </p>
         </div>
       </div>
     </div>
   </body>
-  <footer
-    id="contact"
-    class="bg-gradient-to-r from-cyan-200 to-pink-200 text-slate-900 py-6"
-  >
+
+  <footer id="contact" class="bg-blue-200 text-slate-900 py-6">
     <div class="container mx-auto flex flex-col items-center justify-center">
-      <div class="w-3/4 mx-auto bg-slate-500 rounded-md">
-        <h1 class="text-3xl text-gray-200 ml-4 font-medium text-center underline">
+      <div class="md:w-3/4 mx-auto bg-slate-500 rounded-md">
+        <h1
+          class="text-xl md:text-3xl text-blue-300 ml-4 font-medium text-center underline"
+        >
           Contact us
         </h1>
-        <p class=" text-sm md:text-lg leading-loose p-1  text-slate-100 text-center">
+        <p
+          class="text-xs md:text-lg leading-loose p-1 text-slate-100 text-center"
+        >
           MADAN MOHAN MALAVIYA UNIVERSITY OF TECHNOLOGY, Gorakhpur <br />
           Phone:+91-551-2273958, +91-8765783730 <br />
           Fax: 0551-2270011 <br />
@@ -1299,41 +1315,43 @@
           days between 9:30 am to 5:00 pm)
         </p>
         <div class="flex justify-center">
-          <div class="flex mt-2 text-2xl">
+          <div class="flex mt-2 text-xl">
             <a
               href="https://www.facebook.com/mmmut.ac.in"
               target="_blank"
-              class="text-pink-300 mx-2"
+              class="text-blue-300 mx-2"
             >
               <i class="ri-facebook-circle-line"></i>
             </a>
             <a
               href="https://x.com/i/flow/login?redirect_after_login=%2FMmmutOfficial"
               target="_blank"
-              class="text-pink-300 mx-2"
+              class="text-blue-300 mx-2"
             >
               <i class="ri-twitter-line"></i>
             </a>
             <a
               href="https://www.linkedin.com/school/madan-mohan-malaviya-university-of-technology/"
               target="_blank"
-              class="text-pink-300 mx-2"
+              class="text-blue-300 mx-2"
             >
               <i class="ri-linkedin-fill"></i>
             </a>
             <a
               href="https://www.youtube.com/user/mmmut1"
               target="_blank"
-              class="text-pink-300 mx-2"
+              class="text-blue-300 mx-2"
             >
               <i class="ri-youtube-line"></i>
             </a>
           </div>
         </div>
       </div>
-      <h2 class="mt-3 text-center">Made by krishna_singh & contact:kn168679@gmail.com</h2>
+      <h2 class="mt-3 text-center">
+        Made by krishna_singh <i class="ri-heart-fill text-red-500"></i> &
+        contact:kn168679@gmail.com
+      </h2>
     </div>
-   
   </footer>
   <script src="./src/script.js"></script>
 </html>

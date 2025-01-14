@@ -34,8 +34,14 @@ function toggleDarkMode() {
   document.body.classList.add(bgColors[currentColorIndex]);
 }
 
-const ham_burger=document.getElementById("ham_burger")
-ham_burger.addEventListener('click',()=>{
-    const navBar = document.getElementById('nav_bar');
-     navBar.classList.toggle('hidden');
-})
+const ham_burger = document.getElementById("ham_burger");
+const navBar = document.getElementById("nav_bar");
+
+ham_burger.addEventListener("click", () => {
+  navBar.classList.toggle("hidden");
+  navBar.classList.toggle("flex-col");
+});
+
+const campus_tour = document.getElementById("campus_tour");
+campus_tour.currentTime = 10;
+
